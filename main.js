@@ -1,5 +1,17 @@
-const button = document.getElementsByClassName('fas');
+const hamburgerButton = document.querySelector('.header-right > a');
 
-button.addEventListener('click', function(){
-    outputHtml.innerHTML = document.getElementsByClassName('hamburger-menu')
-})
+const hamburgerCloseButton = document.querySelector('.hamburger-menu .close')
+
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+
+hamburgerButton.addEventListener('click', function(){
+
+    hamburgerMenu.classList.add('active');
+
+});
+
+hamburgerCloseButton.addEventListener('click', function(){
+
+    hamburgerMenu.classList.remove('active');
+
+});
